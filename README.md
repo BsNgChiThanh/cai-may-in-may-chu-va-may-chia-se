@@ -62,18 +62,8 @@ Chọn dòng cuối cùng, Chọn Network reset. Bấm yes, biểu tượng mạ
 
 Cài máy in cho máy chủ gặp lỗi cũng sử dụng Fix này là OK!
 
+### Một lưu ý là máy chủ và máy chia sẻ phải cùng số Bit, trường hợp máy chủ 64Bit và máy chia sẻ là 32Bit đôi khi vẫn được nhưng điều ngược lại thì không! ###
+
 Chúc các bác thành công.
 
-
-
-
-
-
-
-
-
-
-
-
-
-Một cách khác sau khi bật chia sẻ thành công, thì vào Control panel của máy cần được chia sẻ máy in:
+[Chia sẻ địa điểm Google map](https://maps.app.goo.gl/wmAPRFYyF3nNeHd87)
