@@ -1,3 +1,6 @@
+# cai-may-in-may-chu-va-may-chia-se
+Cách cài máy in cho máy chủ và máy chia sẽ, cách fix lỗi máy in
+
 # CÁCH CÀI MÁY IN MÁY CHỦ VÀ MÁY CHIA SẺ KHI GẶP LỖI #
 
 ## Khi cài máy in cho máy chủ và máy tính chia sẻ thì đầy dãy các hướng dẫn trên mạng, nhưng khi gặp lỗi thì có nhiều hướng dẫn làm kiểu này làm kiểu khác, đôi lúc cũng không hiệu quả. Tôi sẽ dùng cách này giúp các bạn fix lỗi thành công như ý muốn ##
