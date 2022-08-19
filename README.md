@@ -67,6 +67,30 @@ Cài máy in cho máy chủ gặp lỗi cũng sử dụng Fix này là OK!
 
 ### Một lưu ý là máy chủ và máy chia sẻ phải cùng số Bit, trường hợp máy chủ 64Bit và máy chia sẻ là 32Bit đôi khi vẫn được nhưng điều ngược lại thì không! ###
 
+Trường hợp vẫn còn báo lỗi, xem kĩ nó là lỗi gì để sửa, sửa thì phải đồng loạt cả máy chủ và máy được chia sẻ.
+
+## Lỗi 0x0000011b ##
+
+Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với tên: 0x0000011b.cmd rồi run chúng với quyền **Run Administrator**
+
+```php
+@echo off
+cls
+echo.
+echo "Fixing registry value..."
+echo.
+REG ADD HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print\ /f /v RpcAuthnLevelPrivacyEnabled /t REG_DWORD /d 0
+
+
+echo.
+echo "Restarting Print Spooler Service"
+
+echo.
+net stop spooler
+net start spooler
+pause
+```
+
 Chúc các bác thành công.
 
 [Chia sẻ địa điểm Google map](https://maps.app.goo.gl/wmAPRFYyF3nNeHd87)
