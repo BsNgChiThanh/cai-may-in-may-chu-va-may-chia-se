@@ -98,6 +98,18 @@ Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với t�
 ```php
 Reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint" /v RestrictDriverInstallationToAdministrators /t REG_DWORD /d 1 /f
 ```
+
+## Lỗi 0x00000040 ##
+
+Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với tên: 0x00000040.cmd rồi run chúng với quyền **Run Administrator**
+
+```php
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print]
+“RpcAuthnLevelPrivacyEnabled”=dword:00000000
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint]
+“RestrictDriverInstallationToAdministrators”=dword:00000001
+```
+
 Chúc các bác thành công.
 
 [Chia sẻ địa điểm Google map](https://maps.app.goo.gl/wmAPRFYyF3nNeHd87)
