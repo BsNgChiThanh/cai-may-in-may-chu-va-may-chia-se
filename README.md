@@ -55,7 +55,7 @@ Ví dụ: bạn đặt tên máy chủ là BsThanh và tên máy in chia sẻ l�
 
 ![1](https://user-images.githubusercontent.com/82578024/163693100-20321bf2-7bc0-422f-aa68-4a1e07b8069e.jpg)
 
-## FIX LỖI CÀI MÁY IN (MÁY BÁO LỖI CÀI MÁY IN NHƯ THẾ NÀO ĐI CHĂNG NỮA FIX KIỂU NÀY LÀ OK HẾT ##
+# FIX LỖI CÀI MÁY IN (MÁY BÁO LỖI CÀI MÁY IN NHƯ THẾ NÀO ĐI CHĂNG NỮA FIX KIỂU NÀY LÀ OK HẾT #
 
 Khi cài máy in đôi lúc gặp lỗi cực kì khó chịu. Vì thế tôi đề nghị một cách hữu hiệu, trước khi cài máy in nên Reset network, sau cài máy in gặp lỗi thì tiến hành Reset network rồi cài lại máy in vẫn ok các bác ạ! Trên biểu tượng mạng, bấm chuột phải và chọn dòng cuối.
 ![1](https://user-images.githubusercontent.com/82578024/163693304-3a8cbd0c-78b7-43cb-80f3-03d3c2c07010.jpg)
@@ -91,6 +91,13 @@ net start spooler
 pause
 ```
 
+## Lỗi 0x00000709 ##
+
+Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với tên: 0x00000709.cmd rồi run chúng với quyền **Run Administrator**
+
+```php
+Reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint" /v RestrictDriverInstallationToAdministrators /t REG_DWORD /d 1 /f
+```
 Chúc các bác thành công.
 
 [Chia sẻ địa điểm Google map](https://maps.app.goo.gl/wmAPRFYyF3nNeHd87)
