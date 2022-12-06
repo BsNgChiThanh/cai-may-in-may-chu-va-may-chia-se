@@ -110,6 +110,22 @@ Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với t�
 “RestrictDriverInstallationToAdministrators”=dword:00000001
 ```
 
+## Sửa lỗi khi chia sẻ máy in win 10 báo lỗi 'you can’t access this shared folder because your organization’s security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network'. ##
+
+- Đây là một lỗi xảy ra khi sử dụng máy tính windows 10 để chia sẻ máy in hoặc chia sẻ file qua lại giữa các máy tính trong mạng LAN. Lỗi này liên quan tới máy tính nhánh sử dụng tài khoản user guest, lỗi này không nghiêm trọng đến mức bạn phải cài lại máy tính mà chỉ một vài thao tác là bạn có thể sửa lỗi thành công.
+- Các bước tiến hành fix:
+  - Cách 1:
+  
+1. Ấn tổ hợp phím [Cửa sổ] và [phím R] để chạy hộp thoại Run.
+2. Nhập 'gpedit.msc' sau đó Enter.
+3. Máy hiện ra bảng Local Group Policy Editor ta tìm lần lượt theo thứ tự sau: **Computer Configuration -> Administrative Templates -> Network -> Lanman Workstation**.
+4. Khi click vào thư mục **Lanman Workstation** bảng Tab bên phải Setting ta chọn mục **'Enable insecure guest logons'** sau đó chọn **'Enable'**
+5. Ấn **Apply** và **OK** để lưu lại là xong
+
+  - Cách 2:
+  
+    - Khởi động lại **Printer Spooler Service**
+    
 Chúc các bác thành công.
 
 [Chia sẻ địa điểm Google map](https://maps.app.goo.gl/wmAPRFYyF3nNeHd87)
