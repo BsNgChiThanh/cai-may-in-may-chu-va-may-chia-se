@@ -125,7 +125,24 @@ Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với t�
   - Cách 2:
   
     - Khởi động lại **Printer Spooler Service**
+    - ![image](https://user-images.githubusercontent.com/82578024/205875558-d2026b0f-1601-4922-af13-06f833c87dd3.png)
+    - ![image](https://user-images.githubusercontent.com/82578024/205875721-1ecd0a39-530d-44d5-92f0-b33e684cbabb.png)
     
-Chúc các bác thành công.
+  - Cách 3: Copy file hệ thống **“mscms.dll”**
+  
+    - Tìm đến thư mục **C:\Windows\System32** và tìm kiếm file **mscms.dll** và copy file này.
+    - Dán file này vào đường dẫn: C:\Windows\System32\spool\drivers\x64\3 (Windows 64 Bit)
+    - Dán file này vào đường dẫn: C:\Windows\System32\spool\drivers\w32\x86\3 (Windows 32 Bit)  
+    - Khởi động lại máy.
+
+# XÓA LỆNH IN THÀNH CÔNG #
+
+Khởi động “Command Prompt” bằng “Run as administrator“.
+
+- ![image](https://user-images.githubusercontent.com/82578024/205881117-1be6df9a-c167-486d-9162-bd1c670fce00.png)
+- Copy dán **net stop spooler** rồi bấm **Enter**
+- Copy dán **del %systemroot%\System32\spool\printers\* /Q** rồi bấm **Enter**
+- Copy dán **net start spooler** rồi bấm **Enter**
+- Đánh vô dòng chữ **exit** rồi **Enter** để thoát.
 
 [Chia sẻ địa điểm Google map](https://maps.app.goo.gl/wmAPRFYyF3nNeHd87)
