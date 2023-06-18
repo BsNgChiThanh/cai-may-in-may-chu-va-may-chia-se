@@ -170,7 +170,8 @@ Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với t�
     - ![image](https://user-images.githubusercontent.com/82578024/205875721-1ecd0a39-530d-44d5-92f0-b33e684cbabb.png)
     
   - Cách 3: Copy file hệ thống **“mscms.dll”**
-  
+
+    - Download file mscms.dll [tại đây](https://www.dllme.com/dll/files/mscms)
     - Tìm đến thư mục **C:\Windows\System32** và tìm kiếm file **mscms.dll** và copy file này.
     - Dán file này vào đường dẫn: C:\Windows\System32\spool\drivers\x64\3 (Windows 64 Bit)
     - Dán file này vào đường dẫn: C:\Windows\System32\spool\drivers\w32\x86\3 (Windows 32 Bit)  
