@@ -111,6 +111,46 @@ Mở NotePad lên Copy đoạn mã bên dưới rồi bấm **Save As** với t�
 “RestrictDriverInstallationToAdministrators”=dword:00000001
 ```
 
+## Lỗi 0x80070035 ## **Có nhiều cách khắc phục lỗi này:**
+
+### Cách 1: Bật SMB V1.0 ###
+
+- Vào Control panel
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/2884ad49-b7b5-4052-b5c6-623632b55e8f)
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/f8014adf-ec7f-4465-813b-f0edfba90455)
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/2b641f5a-308a-4492-b02a-38461736dce9)
+
+### Cách 2: Thay đổi giá trị cho AllowInsecureGuestAuth ###
+
+- Nhấn các phím Windows + R để mở hộp chạy.
+- Gõ regedit và nhấp vào OK.
+- Điều hướng đến:
+  ```php
+  Máy tính \ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Services \ LanmanWorkstation \ Parameters
+  ```
+- Xác định vị trí AllowInsecureGuestAuth.
+- Nhấp chuột phải vào nó và chọn Sửa đổi.
+- Thay đổi giá trị từ 0 thành 1.
+- Trường hợp không có AllowInsecureGuestAuth thì giải pháp
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/3fa9e442-28aa-4fc5-8225-cd835be6e9d8)
+- Bấm chuột phải vào vùng như hình và chọn:
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/486e49c4-0315-4d6d-9456-3cb17a1381dc)
+- Dán tên vào:
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/d9b01a43-44ae-42d4-9046-a283eb3e276a)
+- Và thay đổi giá trị từ 0 thành 1.
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/70bb51c9-8588-4a3b-be2a-df10f39d868d)
+- Nhấp vào OK.
+
+### Cách 3: Bật chia sẻ nâng cao trong máy chính ###
+
+- Đi tới đĩa Cục bộ của bạn (C :), nhấp chuột phải vào nó và chọn Thuộc tính.
+- Nhấp vào tab Chia sẻ.
+- Chuyển đến Chia sẻ nâng cao.
+- Đánh dấu vào ô Chia sẻ thư mục này.
+- ![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/b9b1a65f-7d07-4a1a-abc6-9e3549c76ba9)
+
+**Nếu vẫn không thành công thì [bấm vào đây tham khảo thêm](https://metricleo.com/16-cach-khac-phuc-ma-loi-0x80070035-khong-tim-thay-duong-dan-mang/)
+
 ## Sửa lỗi khi chia sẻ máy in win 10 báo lỗi 'you can’t access this shared folder because your organization’s security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network'. ##
 
 - Đây là một lỗi xảy ra khi sử dụng máy tính windows 10 để chia sẻ máy in hoặc chia sẻ file qua lại giữa các máy tính trong mạng LAN. Lỗi này liên quan tới máy tính nhánh sử dụng tài khoản user guest, lỗi này không nghiêm trọng đến mức bạn phải cài lại máy tính mà chỉ một vài thao tác là bạn có thể sửa lỗi thành công.
