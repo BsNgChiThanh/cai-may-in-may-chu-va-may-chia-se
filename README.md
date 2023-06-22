@@ -56,6 +56,16 @@ Ví dụ: bạn đặt tên máy chủ là BsThanh và tên máy in chia sẻ l�
 
 ![1](https://user-images.githubusercontent.com/82578024/163693100-20321bf2-7bc0-422f-aa68-4a1e07b8069e.jpg)
 
+Hoặc: 
+
+![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/482f54be-c548-428f-a946-bdf7385c9b02)
+
+![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/191ef034-86c7-4f4d-a40b-401375ebd994)
+
+![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/754983fc-aca1-49d5-955b-5f91ee1d6795)
+
+![image](https://github.com/BsNgChiThanh/cai-may-in-may-chu-va-may-chia-se/assets/82578024/1562c164-e022-4eae-8d83-525e9c729d86)
+
 # FIX LỖI CÀI MÁY IN (MÁY BÁO LỖI CÀI MÁY IN NHƯ THẾ NÀO ĐI CHĂNG NỮA FIX KIỂU NÀY LÀ OK HẾT #
 
 Khi cài máy in đôi lúc gặp lỗi cực kì khó chịu. Vì thế tôi đề nghị một cách hữu hiệu, trước khi cài máy in nên Reset network, sau cài máy in gặp lỗi thì tiến hành Reset network rồi cài lại máy in vẫn ok các bác ạ! Trên biểu tượng mạng, bấm chuột phải và chọn dòng cuối.
